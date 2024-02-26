@@ -9,10 +9,7 @@ const routes: Routes = [
         path: '',
         component: MainpageComponent,
     },
-    // {
-    //     path: 'main',
-    //     component: MainpageComponent,
-    // },
+
     {
         path: '***',
         redirectTo: '', pathMatch: 'full',
