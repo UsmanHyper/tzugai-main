@@ -12,4 +12,8 @@ export class MintComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  mint() {
+    console.log('mint');
+  }
 }

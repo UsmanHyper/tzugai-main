@@ -1,6 +1,55 @@
-<p>mainpage works!</p>
-<app-video-background></app-video-background>
+<!-- 
 <app-header></app-header>  
 <app-mint></app-mint>
 <app-subscribe></app-subscribe>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+
+<!-- <div class="main-page">
+    <app-video-background></app-video-background>
+    <app-header></app-header>
+  
+    <div class="main-content">
+        <app-mint></app-mint>
+        <app-subscribe></app-subscribe>
+    </div>
+
+</div> -->
+
+
+<div class="video-container">
+    <video id="background-video" class="video-js vjs-default-skin background-clip" autoplay loop>
+        <source src="../../../assets/videos/NFT.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="header">
+    <div class="nav w-100-p">
+        <div class="header-block">
+            <img src="../../assets/images/tzugai.svg" alt="">
+            <div class="userprofile">
+
+                <img src="../../assets/images/instagram.svg" alt="" class="images">
+                <img src="../../assets/images/facebook.svg" alt="" class="images">
+                <img src="../../assets/images/x.svg" alt="" class="images">
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 100vh;">
+
+</div>
+
+<div>
+    <div class="main-content">
+        <div class="mb-32">
+            <app-mint></app-mint>
+        </div>
+        <div class="mb-32">
+            <app-subscribe></app-subscribe>
+        </div>
+        <div >
+
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

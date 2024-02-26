@@ -12,4 +12,7 @@ export class SubscribeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  signUp() {
+    console.log('signUp');
+  }
 }
