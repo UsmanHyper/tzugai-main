@@ -85,25 +85,39 @@
 
 }
 
+.btn_inner::after {
+   
 
-// .btn_bx{
-//     z-index: 9;
-//     position: relative;
-//     transform: skew(22deg 0deg) !important;
-// }
-// .btn_inner::after {
-//     content: "";
-//     display: block;
-//     border: 2px solid rgba(255, 255, 255, 0);
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     margin: auto;
-//     z-index: -1;
-//     padding: 40px;
-// }
+    @media only screen and (max-width: 600px) {
+        
+        margin-right: 0px !important;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        
+        margin-right: 0px !important;
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      
+        margin-right: 20px !important;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        margin-right: 56px !important;
+
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        margin-right: 56px !important;    }
+
+
+    
+}
 
 // .btn_bx:hover .btn_inner::after {
 //     transform: translate(10px, 10px);
@@ -125,10 +139,11 @@
         margin-top: 20px;
         margin-right: 0px !important;
     }
-
+    
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         margin-top: 20px;
+        margin-right: 20px !important;
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
@@ -139,7 +154,7 @@
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        margin-right: 212px !important;
+        // margin-right: 212px !important;
     }
 
 }

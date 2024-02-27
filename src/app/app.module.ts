@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { MainformModule } from './main-page/main.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BsModalService, ModalModule, } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -24,9 +25,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule,
     MainformModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    // ModalModule,
+    ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [BsModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
