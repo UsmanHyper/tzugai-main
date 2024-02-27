@@ -278,3 +278,31 @@ body {
 .input-cls::-ms-input-placeholder {
     color: #e69800;
 }
+
+
+
+.btn_bx{
+    z-index: 9;
+    position: relative;
+    // transform: skew(22deg) !important;
+}
+.btn_inner::after {
+    content: "";
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    padding: 40px;
+}
+
+.btn_bx:hover .btn_inner::after {
+    transform: translate(0px, 10px) skew(22deg);
+    transition: .4s;
+    border: 2px solid rgb(255, 255, 255);
+
+}
