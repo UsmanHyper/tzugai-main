@@ -7,6 +7,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { MintComponent } from './mint/mint.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { VideoBackgroundComponent } from './video-background/video-background.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,8 +22,8 @@ import { VideoBackgroundComponent } from './video-background/video-background.co
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
-
-  ]
+    MainRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,  ]
 })
 export class MainformModule { }
