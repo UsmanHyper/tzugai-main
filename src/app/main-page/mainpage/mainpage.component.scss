@@ -25,6 +25,48 @@
 }
 
 
+// .header {
+//     .nav {
+//         display: flex;
+//         position: fixed;
+//         background-color: transparent;
+//         flex-wrap: nowrap;
+//         justify-content: flex-end;
+
+//         .header-block {
+//             // background-color: #000000cc;
+//             border-top-left-radius: 5px;
+//             border-top-right-radius: 5px;
+//             width: 100% !important;
+//             display: flex;
+//             align-items: center;
+//             height: 4rem !important;
+//             justify-content: space-between;
+//             padding: 0 16px;
+//         }
+
+
+//     }
+// }
+
+
+// @media only screen and (max-width: 600px) {
+//     // .images {
+//     //     display: none; // hide the images when in mobile view
+//     // }
+//     .header-block{
+//         justify-content: center !important;
+//     }
+// }
+
+// .images{
+//     margin-right: 16px;
+// }
+
+.main-content {
+    padding: 54px 32px 1px 32px !important;
+}
+
 .header {
     .nav {
         display: flex;
@@ -34,7 +76,6 @@
         justify-content: flex-end;
 
         .header-block {
-            // background-color: #000000cc;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             width: 100% !important;
@@ -43,26 +84,28 @@
             height: 4rem !important;
             justify-content: space-between;
             padding: 0 16px;
-        }
 
-        
+            // Hide the images when in mobile view
+            @media only screen and (max-width: 600px) {
+                // .images {
+                //     display: none;
+                // }
+            }
+        }
     }
 }
 
+.images {
+    margin-right: 16px;
+}
 
 @media only screen and (max-width: 600px) {
-    .images {
-        display: none; // hide the images when in mobile view
-    }
-    .header-block{
+    .header-block {
         justify-content: center !important;
+        flex-direction: column;
     }
-}
 
-.images{
-    margin-right: 8px;
-}
-
-.main-content{
-    padding: 54px 32px 1px 32px !important;
+    .nav {
+        margin: 32px 0px;
+    }
 }

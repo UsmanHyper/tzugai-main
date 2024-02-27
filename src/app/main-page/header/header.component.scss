@@ -22,16 +22,31 @@
     }
 }
 
+.images{
+    margin-right: 16px;
+}
 
 @media only screen and (max-width: 600px) {
-    .images {
-        display: none; // hide the images when in mobile view
-    }
+    // .images {
+    //     display: none; // hide the images when in mobile view
+    // }
     .header-block{
         justify-content: center !important;
+        flex-direction: column;
     }
+   
 }
 
-.images{
-    margin-right: 8px;
+.container {
+    display: flex;
+    // position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Ensure full width */
+    background-color: transparent;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* Spread items horizontally */
+    border-top: 1px solid white;
 }
+

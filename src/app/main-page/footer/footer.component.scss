@@ -1,6 +1,6 @@
 /* Common styles for both mobile and desktop */
 .images {
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 .copywite-text {
@@ -26,16 +26,9 @@
 
 /* Mobile view styles */
 @media only screen and (max-width: 600px) {
-    // .images {
-    //     display: none;
-    //     /* hide the images when in mobile view */
-    // }
-
     .container {
         flex-direction: column;
     }
-
-
 
     .header-block {
         justify-content: center !important;

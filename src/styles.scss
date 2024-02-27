@@ -10,8 +10,13 @@
 
 
 body {
-    background: #00000047;
-    margin: 0px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9) 0%, 
+        rgba(0, 0, 0, 0.7) 20%, 
+        rgba(0, 0, 0, 0.7) 80%, 
+        rgba(0, 0, 0, 0.9) 100%
+    );
+        margin: 0px;
 }
 
 :root {
@@ -45,12 +50,11 @@ body {
 
     @include media-breakpoint('sm') {
         flex-direction: column; // For small screens, stack elements vertically
-        padding: 30px 0;
+        // padding: 30px 0;
         text-align: center;
     }
 
     @media only screen and (max-width: 600px) {
-        padding: 20px 0;
         margin-bottom: 12px;
         flex-direction: column; // For small screens, stack elements vertically
         text-align: center;
@@ -58,7 +62,7 @@ body {
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
-        padding: 24px 0;
+        // padding: 24px 0;
 
 
         flex-direction: column; // For small screens, stack elements vertically
@@ -68,8 +72,8 @@ body {
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         flex-direction: column; // For small screens, stack elements vertically
-        padding: 30px 0;
-
+        // padding: 30px 0;
+        flex-wrap: wrap;
 
         text-align: center;
     }
@@ -78,6 +82,7 @@ body {
     @media only screen and (min-width: 992px) {
         padding: 48px 0;
         flex-direction: row !important; // For small screens, stack elements vertically
+        flex-wrap: wrap;
         // text-align: center;
     }
 
@@ -192,7 +197,7 @@ body {
 
     @media only screen and (max-width: 600px) {
 
-        font-size: 20px !important;
+        font-size: 18px !important;
 
     }
 
@@ -222,6 +227,7 @@ body {
 
 
 
+
 .input-cls {
     font-size: 36px;
     height: 76px;
@@ -235,14 +241,14 @@ body {
 
     @media only screen and (max-width: 600px) {
 
-        padding: 4px 0px;
+        padding: 4px 8px;
         height: 47px;
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
 
-        padding: 4px 0px;
+        // padding: 4px 0px;
         height: 76px;
     }
 
@@ -280,12 +286,12 @@ body {
 }
 
 
-
-.btn_bx{
+.btn_bx {
     z-index: 9;
     position: relative;
     // transform: skew(22deg) !important;
 }
+
 .btn_inner::after {
     content: "";
     display: block;
@@ -304,5 +310,201 @@ body {
     transform: translate(0px, 10px) skew(22deg);
     transition: .4s;
     border: 2px solid rgb(255, 255, 255);
+
+}
+
+// @media only screen and (max-width: 540px) {
+//     .input-cls {
+//         padding: 4px 8px !important;
+//         height: 42px !important;
+//     }
+//     .lable-style-btn {
+//         transform: skew(-12deg) !important;
+//         padding: 0px 40px !important;
+//     }
+// }
+
+// @media only screen and (min-width: 540px) {
+//     .input-cls {
+//         padding: 4px 8px !important;
+//         height: 42px !important;
+//     }
+//     .lable-style-btn {
+//         transform: skew(-12deg) !important;
+//         padding: 0px 40px !important;
+//     }
+// }
+
+@media only screen and (max-width: 600px) {
+    .lable-style-btn {
+        transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+    .main-content {
+        padding: 54px 16px 1px !important;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(5px, 10px) skew(12deg);
+    }
+
+    .input-cls {
+        transform: skew(12deg);
+        margin-bottom: 16px;
+    }
+
+    .custom-btn {
+        transform: skew(12deg);
+    }
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_inner::after {
+        padding: 4px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .lable-style-btn {
+        transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(5px, 10px) skew(12deg);
+    }
+
+    .input-cls {
+        transform: skew(12deg);
+        margin-bottom: 0px;
+    }
+
+    .custom-btn {
+        transform: skew(12deg);
+    }
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_inner::after {
+        padding: 4px;
+    }
+
+    .main-content {
+        padding: 54px 16px 1px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+        padding: 6px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+        padding: 10px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
 
 }
