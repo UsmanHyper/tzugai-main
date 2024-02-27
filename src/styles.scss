@@ -1,10 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Nunito Sans");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
 @import url("https://fonts.googleapis.com/css?family=Manrope");
 @import url("https://fonts.googleapis.com/css?family=Inter");
 @import url("https://fonts.googleapis.com/css?family=Lalezar");
-// @import url("https://fonts.googleapis.com/css?family=Space Grotesk");
 @import "assets/styles/helpers";
 @import '~bootstrap/dist/css/bootstrap.css';
 
@@ -55,7 +53,7 @@ body {
     }
 }
 
-.modal-content{
+.modal-content {
     background-color: #000000bf;
 }
 
