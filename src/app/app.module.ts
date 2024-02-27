@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainRoutingModule } from './main-page/main-routing.module';
 import { RouterModule } from '@angular/router';
 import { MainformModule } from './main-page/main.module';
 
@@ -18,7 +17,7 @@ import { MainformModule } from './main-page/main.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-   
+
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule,
