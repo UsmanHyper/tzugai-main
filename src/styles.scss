@@ -6,19 +6,10 @@
 @import "assets/styles/helpers";
 @import '~bootstrap/dist/css/bootstrap.css';
 
-
-
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.9) 0%,
-            rgba(0, 0, 0, 0.7) 20%,
-            rgba(0, 0, 0, 0.7) 80%,
-            rgba(0, 0, 0, 0.9) 100%);
     margin: 0px;
 }
 
-:root {
-    background-color: #00000042;
-}
 
 @media (min-aspect-ratio:16/9) {
     .background-clip {
