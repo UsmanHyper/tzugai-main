@@ -28,7 +28,6 @@ export class SubscribeComponent implements OnInit {
   }
 
 
-
   openModalWithComponent(msg: any, image: any): void {
     const config = {
       class: 'modal-dialog-centered', // Center the modal vertically
@@ -54,8 +53,8 @@ export class SubscribeComponent implements OnInit {
         console.log(res);
         this.openModalWithComponent(" Email Has Been Sent successfully", "../../assets/images/tickN.png")
       }, (err: any) => {
-        console.log(err['error']['error'])
-        this.openModalWithComponent(err['error']['error'], "/assets/images/cross.png")
+        let errormsg = err['error']['error'] ? err['error']['error'] : "Something went wrong"
+        this.openModalWithComponent(errormsg, "/assets/images/cross.png")
       });
 
     }

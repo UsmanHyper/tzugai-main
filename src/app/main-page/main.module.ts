@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { MintComponent } from './mint/mint.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
-import { VideoBackgroundComponent } from './video-background/video-background.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -17,7 +16,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainpageComponent,
     MintComponent,
     SubscribeComponent,
-    VideoBackgroundComponent
 
   ],
   imports: [
