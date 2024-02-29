@@ -118,8 +118,8 @@ body {
     @media only screen and (max-width: 600px) {
         line-height: 32px;
         font-size: 20px;
-        // margin-bottom: 12px;
-        margin: 0 10px 12px 10px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
 
 
     }
@@ -128,8 +128,8 @@ body {
     @media only screen and (min-width: 600px) {
         line-height: 32px;
         font-size: 20px;
-        // margin-bottom: 12px;
-        margin: 0 10px 12px 10px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
 
 
     }
@@ -138,8 +138,8 @@ body {
     @media only screen and (min-width: 768px) {
         font-size: 36px;
         line-height: 32px;
-        // margin-bottom: 12px;
-        margin: 0 10px 12px 10px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
 
     }
 
@@ -147,6 +147,8 @@ body {
     @media only screen and (min-width: 992px) {
         padding: 40px 0;
         line-height: 32px;
+        margin-bottom: 12px;
+
 
     }
 
