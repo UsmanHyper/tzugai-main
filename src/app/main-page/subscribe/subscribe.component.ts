@@ -4,6 +4,7 @@ import { ApiService } from 'src/app/services/api.service';
 import { environment } from 'src/environments/environment';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
+import { first } from 'rxjs';
 @Component({
   selector: 'app-subscribe',
   templateUrl: './subscribe.component.html',
@@ -49,7 +50,7 @@ export class SubscribeComponent implements OnInit {
     }
     else {
       const slug = new URL(`${environment.baseUrl}subscribed`);
-      this.apiService.post(slug.href, { email: this.email.value }).subscribe((res: any) => {
+      this.apiService.post(slug.href, { email: this.email.value }).pipe(first()).subscribe((res: any) => {
         console.log(res);
         this.openModalWithComponent(" Email Has Been Sent successfully", "../../assets/images/tickN.png")
       }, (err: any) => {
