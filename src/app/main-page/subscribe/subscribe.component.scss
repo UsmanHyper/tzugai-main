@@ -43,19 +43,19 @@
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        font-size: 36px !important;
+        font-size: 20px !important;
         height: 76px;
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        font-size: 40px !important;
+        font-size: 28px !important;
 
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        font-size: 44px;
+        font-size: 28px;
         height: 82px;
     }
 }
@@ -63,7 +63,7 @@
 
 
 .input-class::placeholder {
-    color: #e69800;
+    color: #333333;
     opacity: 1;
     font-size: 16px;
 
@@ -71,7 +71,7 @@
 }
 
 .input-class::-ms-input-placeholder {
-    color: #e69800;
+    color: #333333;
 }
 
 .btn_round {
@@ -218,7 +218,7 @@
     }
 
     .btn_round_inner::after {
-        padding: 40px;
+        padding: 20px;
     }
 
     .main-content {
@@ -281,7 +281,7 @@
     }
 
     .btn_round_inner::after {
-        padding: 40px;
+        padding: 28px;
     }
 
     .main-content {
@@ -336,7 +336,7 @@
     }
 
     .btn_round_inner::after {
-        padding: 40px;
+        padding: 28px;
     }
 
     .main-content {
@@ -355,10 +355,10 @@
 
 .custom-round-btn,
 .input-class {
-    background-color: #e69800;
+    background-color: #333333;
     color: #ffffff;
     transform-origin: bottom left;
-    border: #e69800;
+    border: #333333;
     padding: 10px;
     border-radius: 50px;
 }
@@ -374,6 +374,7 @@
     text-align: left;
     color: white;
     display: inline-block;
+    text-transform: uppercase;
 
     @media only screen and (max-width: 600px) {
         font-size: 18px !important;
@@ -386,16 +387,16 @@
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        font-size: 36px !important;
+        font-size: 20px !important;
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        font-size: 40px !important;
+        font-size: 28px !important;
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        font-size: 44px;
+        font-size: 28px;
     }
 }

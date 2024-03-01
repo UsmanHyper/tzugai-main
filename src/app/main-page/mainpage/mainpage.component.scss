@@ -1,4 +1,3 @@
-// body {
 .main-body {
 
 
@@ -19,13 +18,14 @@
 
 
 .video-container {
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.4);
+    // background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(20 20 20);
     min-height: 80%;
     z-index: -1;
 }
@@ -37,46 +37,12 @@
 }
 
 
-// .header {
-//     .nav {
-//         display: flex;
-//         position: fixed;
-//         background-color: transparent;
-//         flex-wrap: nowrap;
-//         justify-content: flex-end;
 
-//         .header-block {
-//             // background-color: #000000cc;
-//             border-top-left-radius: 5px;
-//             border-top-right-radius: 5px;
-//             width: 100% !important;
-//             display: flex;
-//             align-items: center;
-//             height: 4rem !important;
-//             justify-content: space-between;
-//             padding: 0 16px;
-//         }
-
-
-//     }
-// }
-
-
-// @media only screen and (max-width: 600px) {
-//     // .images {
-//     //     display: none; // hide the images when in mobile view
-//     // }
-//     .header-block{
-//         justify-content: center !important;
-//     }
-// }
-
-// .images{
-//     margin-right: 16px;
-// }
 
 .main-content {
-    padding: 54px 32px 1px 32px !important;
+    padding: 32px 32px 1px 32px !important;
+    // background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(20 20 20);
 }
 
 .header {
