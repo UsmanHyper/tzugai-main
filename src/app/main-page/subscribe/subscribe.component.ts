@@ -53,6 +53,9 @@ export class SubscribeComponent implements OnInit {
       this.apiService.post(slug.href, { email: this.email.value }).pipe(first()).subscribe((res: any) => {
         console.log(res);
         this.openModalWithComponent(" Email Has Been Sent successfully", "../../assets/images/tickN.png")
+        setTimeout(() => {
+          this.email.reset();
+        })
       }, (err: any) => {
         let errormsg = err['error']['error'] ? err['error']['error'] : "Something went wrong"
         this.openModalWithComponent(errormsg, "/assets/images/cross.png")
