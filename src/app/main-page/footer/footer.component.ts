@@ -11,5 +11,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  openHandle(event: any) {
 
+    console.log("event", event)
+  }
 }
