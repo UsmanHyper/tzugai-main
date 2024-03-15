@@ -18,7 +18,7 @@
 
 
 .video-container {
-    // position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -92,7 +92,8 @@
     }
 
     .main-body {
-        height: 48vh;
+        // height: 48vh;
+        height: 100vh;
     }
 
     .image-size {
@@ -121,7 +122,8 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .main-body {
-        height: 54vh;
+        // height: 54vh;
+        height: 100vh;
     }
 
     .image-size {
@@ -150,7 +152,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .main-body {
-        height: 56vh;
+        // height: 56vh;
+        height: 100vh;
     }
 
     .image-size {
@@ -179,7 +182,8 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .main-body {
-        height: 60vh;
+        // height: 60vh;
+        height: 100vh;
     }
 
     .image-size {
@@ -207,7 +211,8 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .main-body {
-        height: 62vh;
+        // height: 62vh;
+        height: 100vh;
     }
 
     .image-size {

@@ -1,4 +1,24 @@
 <div class="main-body">
+
+    <ng-container *ngIf="!mobile">
+        <div class="video-container">
+            <video id="background-video" class="background-clip" [loop]="true" [muted]="true" [autoplay]="true">
+                <source [src]="video" type="video/mp4">
+            </video>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="mobile">
+        <div class="video-container">
+            <!-- <img src="../../../assets/images/image_2024_03_15T16_25_08_724Z.png" id="background-video" class="background-clip"  alt="demo" class="images "> -->
+            <video id="background-video" class="background-clip" style="height: 100%;" [controls]="false" [loop]="true"
+                [muted]="true" [autoplay]="true">
+                <source [src]="video" type="video/mp4">
+            </video>
+        </div>
+    </ng-container>
+
+
     <div class="header">
         <div class="nav w-100-p">
             <div class="header-block">
@@ -14,9 +34,9 @@
                         <img src="../../assets/images/instagram.svg" alt="Instagram" class="images ">
                     </a>
 
-                    <a href="https://www.facebook.com" target="_blank">
+                    <!-- <a href="https://www.facebook.com" target="_blank">
                         <img src="../../assets/images/facebook.svg" alt="Facebook" class="images">
-                    </a>
+                    </a> -->
 
                     <a href="https://twitter.com/tzugai" target="_blank">
                         <img src="../../assets/images/x.svg" alt="Twitter" class="images">
@@ -25,25 +45,8 @@
             </div>
         </div>
     </div>
-    <ng-container *ngIf="!mobile">
-        <div class="video-container">
-            <video id="background-video" class="background-clip" [controls]="false" [loop]="true" [muted]="true"
-                [autoplay]="true">
-                <source [src]="video" type="video/mp4">
-            </video>
-        </div>
-    </ng-container>
-
-    <ng-container *ngIf="mobile">
-        <div class="video-container">
-            <!-- <img src="../../../assets/images/image_2024_03_15T16_25_08_724Z.png" id="background-video" class="background-clip"  alt="demo" class="images "> -->
-            <video id="background-video" class="background-clip" style="height: 100%;" [controls]="false" [loop]="true" [muted]="true"
-                [autoplay]="true">
-                <source [src]="video" type="video/mp4">
-            </video>
-        </div>
-    </ng-container>
-
+    <div style="height: 100vh;">
+    </div>
     <div class="main-content">
         <div class="mb-32">
             <!-- <app-mint></app-mint> -->
