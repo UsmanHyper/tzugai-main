@@ -1,39 +1,42 @@
 .main-body {
-
-
     background: linear-gradient(rgba(0, 0, 0, 0.9) 0%,
             rgba(0, 0, 0, 0.7) 20%,
             rgba(0, 0, 0, 0.7) 80%,
             rgba(0, 0, 0, 0.9) 100%);
+    
 
 }
 
 
+
+
 .main-page {
     width: 100% !important;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
 
 }
 
 
 .video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    // background-color: rgba(0, 0, 0, 0.4);
+ 
     background-color: rgb(20 20 20);
-    min-height: 80%;
-    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+
 }
 
 #background-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1000;
+    opacity: .5;
 }
 
 
@@ -93,7 +96,7 @@
 
     .main-body {
         // height: 48vh;
-        height: 100vh;
+        height: 100%;
     }
 
     .image-size {
@@ -123,7 +126,7 @@
 @media only screen and (min-width: 600px) {
     .main-body {
         // height: 54vh;
-        height: 100vh;
+        height: 100%;
     }
 
     .image-size {
@@ -153,7 +156,7 @@
 @media only screen and (min-width: 768px) {
     .main-body {
         // height: 56vh;
-        height: 100vh;
+        height: 100%;
     }
 
     .image-size {
@@ -183,7 +186,7 @@
 @media only screen and (min-width: 992px) {
     .main-body {
         // height: 60vh;
-        height: 100vh;
+        height: 100%;
     }
 
     .image-size {
@@ -212,7 +215,7 @@
 @media only screen and (min-width: 1200px) {
     .main-body {
         // height: 62vh;
-        height: 100vh;
+        height: 100%;
     }
 
     .image-size {

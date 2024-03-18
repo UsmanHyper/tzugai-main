@@ -52,7 +52,7 @@ export class SubscribeComponent implements OnInit {
       const slug = new URL(`${environment.baseUrl}subscribed`);
       this.apiService.post(slug.href, { email: this.email.value }).pipe(first()).subscribe((res: any) => {
         console.log(res);
-        this.openModalWithComponent(" Email Has Been Sent successfully", "../../assets/images/tickN.png")
+        this.openModalWithComponent(" Your Email Has Been Registered", "../../assets/images/tickN.png")
         setTimeout(() => {
           this.email.reset();
         })
