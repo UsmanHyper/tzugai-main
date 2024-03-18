@@ -23,9 +23,9 @@
     </div>
     <ng-container *ngIf="!mobile">
         <div class="video-container">
-            <video id="background-video" class="background-clip" playsinline autobuffer [loop]="true" [muted]="true" 
-                [autoplay]="true">
-                <source [src]="video" type="video/mp4">
+            <video id="background-video" class="background-clip" playsinline autobuffer [loop]="true" [muted]="true"
+                [autoplay]="true" data-wf-ignore="true" data-object-fit="cover">
+                <source [src]="video" type="video/mp4" data-wf-ignore="true">
             </video>
         </div>
     </ng-container>
@@ -33,9 +33,10 @@
     <ng-container *ngIf="mobile">
         <div class="video-container">
             <!-- <img src="../../../assets/images/image_2024_03_15T16_25_08_724Z.png" id="background-video" class="background-clip"  alt="demo" class="images "> -->
-            <video id="background-video" class="background-clip" style="height: 100%;" playsinline autobuffer [controls]="false"
-                [loop]="true" [muted]="true" [autoplay]="true">
-                <source [src]="video" type="video/mp4">
+            <video id="background-video" class="background-clip" style="height: 100%;" playsinline autobuffer
+                [controls]="false" [loop]="true" [muted]="true" [autoplay]="true" data-wf-ignore="true"
+                data-object-fit="cover">
+                <source [src]="video" type="video/mp4" data-wf-ignore="true">
             </video>
         </div>
     </ng-container>
